@@ -1,0 +1,11 @@
+<div class="voice-command-container">
+  <button (click)="startListening()" [disabled]="listening">Start Listening</button>
+  <button (click)="stopListening()" [disabled]="!listening">Stop Listening</button>
+  <div class="preferences">
+    <button (click)="openSettings()">Settings</button>
+  </div>
+  <!-- <textarea [(ngModel)]="transcribedText" readonly></textarea> -->
+  <textarea #transcribedTextArea [(ngModel)]="transcribedText" readonly></textarea>
+</div>
+
+
