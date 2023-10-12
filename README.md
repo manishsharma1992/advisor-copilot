@@ -1,5 +1,13 @@
-# Wells Fargo - Wealth and Investment Management Technology - Hackathon
+# Wells Fargo - WIMT - Hackathon
 
-## Team Name: The Jedi Sentinels
-## Team Members: 
-## Challenge Selected: Advisor Co-Pilot
+Team Name: The Jedi Sentinels
+
+Team Members: 
+- Kandibanda, Gopinath 
+- Ramaswamy, Ganesh
+- Karmarkar, Nilanjan 
+- Nayak, Santoshi
+- Kaja sheik kather, Afzalhussain
+- Sharma, Manish R
+
+Challenge Selected: Advisor Co-Pilot
