@@ -14,6 +14,7 @@ export class SpeechToTextComponent {
   currentTimestamp!: number;
   currentTime!: string;
   isClicked: boolean = true;
+  isLoading: boolean = false;
 
   gptResponse: any;
 
@@ -39,8 +40,10 @@ export class SpeechToTextComponent {
   stopService(){
     this.service.stop()
     this.isClicked = !this.isClicked;
+    this.isLoading = true;
     this.service.ask_gpt({role: 'user', content: this.service.transcribedText}).subscribe((response) => {
       this.gptResponse = ((response.responseData.choices) as Array<any>).map(ele => ele.message.content)
     });
+    // this.isLoading = false;
   }
 }

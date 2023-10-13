@@ -13,6 +13,10 @@
     cursor: pointer;
     font-size: 24px;
   }
+  .response-container {
+    min-height: 400px;
+    overflow-y: auto;
+  }
 
   .divider:after,
   .divider:before {
