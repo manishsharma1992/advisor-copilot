@@ -19,11 +19,11 @@ def decrypt_message(encrypted_message, key):
 # # Load the key
 # key = load_key()
 
-# # Encrypt the API key
-# api_key = "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"
-# encrypted_api_key = encrypt_message(api_key, key)
+# Encrypt the API key
+# api_key = ""
+# encrypted_api_key = encrypt_message(api_key, "t7H7Xt7-u9CHqJIE5a6RNN751UYnlKWldZEVCA6clx0=")
 # print(f"Encrypted: {encrypted_api_key}")
 
 # # Decrypt the API key
-# decrypted_api_key = decrypt_message(encrypted_api_key, key)
+# decrypted_api_key = decrypt_message(encrypted_api_key, "t7H7Xt7-u9CHqJIE5a6RNN751UYnlKWldZEVCA6clx0=")
 # print(f"Decrypted: {decrypted_api_key}")
