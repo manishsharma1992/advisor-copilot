@@ -15,6 +15,7 @@ export class SpeechToTextComponent {
   currentTime!: string;
   isClicked: boolean = true;
 
+  gptResponse: any;
 
   constructor(
     public service : VoiceRecognitionService
@@ -37,6 +38,9 @@ export class SpeechToTextComponent {
 
   stopService(){
     this.service.stop()
-      this.isClicked = !this.isClicked;
+    this.isClicked = !this.isClicked;
+    this.service.ask_gpt({role: 'user', content: this.service.transcribedText}).subscribe((response) => {
+      this.gptResponse = ((response.responseData.choices) as Array<any>).map(ele => ele.message.content)
+    });
   }
 }

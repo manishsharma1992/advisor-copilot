@@ -1,4 +1,7 @@
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { SERVER_BASE_URL } from '../../environment';
+import { Observable } from 'rxjs';
 
 declare var webkitSpeechRecognition: any;
 @Injectable({
@@ -11,7 +14,7 @@ export class VoiceRecognitionService {
   public text = '';
   tempWords: any;
 
-  constructor() { }
+  constructor(public http: HttpClient) { }
 
   init() {
 
@@ -51,5 +54,13 @@ export class VoiceRecognitionService {
   wordConcat() {
     this.text = this.text + ' ' + this.tempWords + '.';
     this.tempWords = '';
+  }
+
+  get transcribedText() {
+    return this.text;
+  }
+
+  ask_gpt(request: any): Observable<any> {
+    return this.http.post(SERVER_BASE_URL + '/ask_gpt', request, { headers: new HttpHeaders({'Content-Type': 'application/json'}) });
   }
 }
