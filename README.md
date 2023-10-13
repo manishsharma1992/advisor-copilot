@@ -11,3 +11,7 @@ Team Members:
 - Sharma, Manish R
 
 Challenge Selected: Advisor Co-Pilot
+
+WorkFlow Diagram :
+
+![wf](https://github.com/manishsharma1992/advisor-copilot/assets/88190872/5fa3fd67-95dc-47dd-9e96-e690c2fb9624)
