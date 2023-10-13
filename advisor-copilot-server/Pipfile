@@ -11,6 +11,11 @@ marshmallow = "*"
 virtualenv = "*"
 openai = "*"
 flask-restful = "*"
+pip = "*"
+transformers = "*"
+tensorflow = "*"
+tensorflow-datasets = "*"
+pandas = "*"
 
 [dev-packages]
 

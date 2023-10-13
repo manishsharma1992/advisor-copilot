@@ -13,25 +13,26 @@
   <div class="container py-5">
 
     <div class="row d-flex justify-content-center">
-      <div class="col-md-10 col-lg-8 col-xl-6">
+      <div class="col-md-10 col-lg-8 col-xl-12">
 
         <div class="card" id="chat2">
           <div class="card-header d-flex justify-content-between align-items-center p-3">
             <h5 class="mb-0">Voice recognition</h5>
 
           </div>
-          <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 300px">
+          <div class="card-body" data-mdb-perfect-scrollbar="true" style="position: relative; height: 300px; width: 99%; overflow-y: auto; overflow-x: hidden;">
 
-            <div class="d-flex flex-row justify-content-start">
+            <div class="d-flex flex-row justify-content-start" style="min-height:400px; overflow-y: auto">
               <img src="../../assets/Wells_Fargo_Logo.png" alt="Wells fargo" width="40" height="40">
               <div>
                 <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Hello Ganesh!!, {{service.text}}</p>
-                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #fff;">{{gptResponse}}</p>
+                <p class="small p-2 ms-3 mb-1 rounded-3 col-md-10 col-lg-8 col-xl-12" style="background-color: #fff;">{{gptResponse}}</p>
+                <!-- <span *ngIf="isLoading"><i class="fa fa-spinner" aria-hidden="true"></i>Loading...</span> -->
                 <p class="small ms-3 mb-3 rounded-3 text-muted">{{ currentTime }}</p>
               </div>
             </div>
           </div>
-          <div class="card-footer text-muted">
+          <div class="card-footer text-muted"> 
             <button type="button" *ngIf="isClicked" class="btn btn-primary btn-sm float-right" data-mdb-ripple-color="dark" (click)="startService()" ><i class="fa fa-microphone"></i></button>
             <button type="button" *ngIf="!isClicked" class="btn btn-primary btn-sm float-right" data-mdb-ripple-color="dark" (click)="stopService()" ><i class="fa fa-stop"></i></button>
           </div>
