@@ -1,0 +1,23 @@
+#chat2 .form-control {
+  border-color: transparent;
+  }
+
+  #chat2 .form-control:focus {
+  border-color: transparent;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  .float-right {
+    float: right;
+  }
+  .icon {
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .divider:after,
+  .divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+  }
