@@ -43,7 +43,8 @@ export class SpeechToTextComponent {
     this.isLoading = true;
     this.service.ask_gpt({role: 'user', content: this.service.transcribedText}).subscribe((response) => {
       this.gptResponse = ((response.responseData.choices) as Array<any>).map(ele => ele.message.content)
+      this.isLoading = false;
     });
-    // this.isLoading = false;
+   
   }
 }
