@@ -21,13 +21,12 @@
 
 ## Summary of the Solution
 
-WorkFlow Diagram :
-    
-![Advisor Co-Pilot Worflow Diagram](https://github.com/manishsharma1992/advisor-copilot/assets/6358102/6de75f38-866c-401d-a776-d50469015c67)
+WorkFlow Diagram:
 
-Working Demo:
+![wf](https://github.com/manishsharma1992/advisor-copilot/assets/88190872/5fa3fd67-95dc-47dd-9e96-e690c2fb9624)
 
-https://github.com/manishsharma1992/advisor-copilot/assets/6358102/c44035f4-105d-48e8-875f-c7563d45b502
+Working Demo: Watch the video
 
+[![Working Demo](image.png)](https://github.com/manishsharma1992/advisor-copilot/assets/6358102/ad66a7db-ac98-4636-bdac-a461103a6b8e)
 
 
