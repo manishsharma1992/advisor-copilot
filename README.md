@@ -22,8 +22,7 @@
 ## Summary of the Solution
 
 WorkFlow Diagram:
-
-![wf](https://github.com/manishsharma1992/advisor-copilot/assets/88190872/5fa3fd67-95dc-47dd-9e96-e690c2fb9624)
+![Advisor Co-Pilot Worflow Diagram](https://github.com/manishsharma1992/advisor-copilot/assets/6358102/0f15d9eb-85dd-4dbc-a564-84f0c0de49aa)
 
 Working Demo: Watch the video
 
