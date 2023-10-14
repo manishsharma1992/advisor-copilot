@@ -23,4 +23,8 @@
 
     WorkFlow Diagram :
 
-    ![wf](https://github.com/manishsharma1992/advisor-copilot/assets/88190872/5fa3fd67-95dc-47dd-9e96-e690c2fb9624)
+    ![wf](https://github.com/m
+
+https://github.com/manishsharma1992/advisor-copilot/assets/6358102/ad66a7db-ac98-4636-bdac-a461103a6b8e
+
+anishsharma1992/advisor-copilot/assets/88190872/5fa3fd67-95dc-47dd-9e96-e690c2fb9624)
