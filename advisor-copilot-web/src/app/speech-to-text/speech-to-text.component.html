@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="container-fluid pading-0">
     <section style="background-color: #eee;">
-        <div class="container py-5">
+        <div class="container py-4">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-12">
 
@@ -11,16 +11,22 @@
                         </div>
                         <div class="card-body" data-mdb-perfect-scrollbar="true"
                             style="position: relative; height: 300px; width: 99%; overflow-y: auto; overflow-x: hidden;">
-                            <div class="d-flex flex-row justify-content-start"
-                                style="min-height:400px; overflow-y: auto">
+                            <div class="d-flex flex-row justify-content-start">
                                 <img class="rounded-circle" src="../../assets/ganesh.png" alt="Wells fargo" width="40" height="40">
                                 <div>
                                     <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">{{service.text}}</p>
-                                    <p class="small p-2 ms-3 mb-1 rounded-3 col-md-10 col-lg-8 col-xl-12"
-                                        style="background-color: #fff;">{{gptResponse}}</p>
-                                    <span *ngIf="isLoading"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></span>
                                     <p class="small ms-3 mb-3 rounded-3 text-muted">{{ currentTime }}</p>
                                 </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                              <span *ngIf="isLoading"><i class="fa fa-spinner fa-pulse" aria-hidden="true"></i></span>
+                              <div *ngIf="gptResponse">
+                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary"> {{gptResponse}}</p>
+                                <!-- <p class=" typewriter-container"> {{typewriterText}}</p> -->
+                              </div>
+                              <img  *ngIf="gptResponse" src="../../assets/ava4-bg.webp"
+                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                <!-- <p class="small ms-3 mb-3 rounded-3 text-muted">{{ currentTime }}</p> -->
                             </div>
                         </div>
                         <div class="card-footer text-muted">

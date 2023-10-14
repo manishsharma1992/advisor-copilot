@@ -13,7 +13,7 @@
     cursor: pointer;
     font-size: 24px;
   }
-  
+
   .response-container {
     min-height: 400px;
     overflow-y: auto;
@@ -25,4 +25,22 @@
   flex: 1;
   height: 1px;
   background: #eee;
+  }
+  .pading-0 {
+    padding: 0!important;
+  }
+
+  .typewriter-container {
+    font-size: 20px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 2px solid #000; /* Simulate the typing cursor */
+
+    /* Optional: Animation for the typing cursor */
+    animation: typing-cursor 0.7s steps(1) infinite;
+  }
+
+  @keyframes typing-cursor {
+    0%, 100% { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid #000; }
   }

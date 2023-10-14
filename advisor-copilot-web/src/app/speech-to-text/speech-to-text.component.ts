@@ -26,9 +26,10 @@ export class SpeechToTextComponent {
    toggleIcons() {
     this.showHeart = !this.showHeart;
   }
+  typewriterText = ''; // Initialize with empty text
+  originalText= 'response text should be updated here '; // Your desired text
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
   startService(){
     this.service.start()
@@ -39,12 +40,21 @@ export class SpeechToTextComponent {
 
   stopService(){
     this.service.stop()
+    this.typeWriter(0);
     this.isClicked = !this.isClicked;
     this.isLoading = true;
     this.service.ask_gpt({role: 'user', content: this.service.transcribedText}).subscribe((response) => {
       this.gptResponse = ((response.responseData.choices) as Array<any>).map(ele => ele.message.content)
       this.isLoading = false;
     });
-   
+  }
+  typeWriter(index: number) {
+    if (index < this.originalText.length) {
+      this.typewriterText += this.originalText.charAt(index);
+      index++;
+      setTimeout(() => {
+        this.typeWriter(index);
+      }, 100); // Adjust the delay (in milliseconds) to control typing speed
+    }
   }
 }
