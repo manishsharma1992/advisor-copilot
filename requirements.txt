@@ -68,13 +68,6 @@ rsa==4.9
 safetensors==0.4.0
 six==1.16.0
 SQLAlchemy==2.0.22
-tensorboard==2.14.1
-tensorboard-data-server==0.7.1
-tensorflow==2.14.0
-tensorflow-datasets==4.9.3
-tensorflow-estimator==2.14.0
-tensorflow-io-gcs-filesystem==0.34.0
-tensorflow-metadata==1.14.0
 termcolor==2.3.0
 tokenizers==0.14.1
 toml==0.10.2
