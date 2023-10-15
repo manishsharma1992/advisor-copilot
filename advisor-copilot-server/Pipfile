@@ -16,6 +16,9 @@ transformers = "*"
 tensorflow = "*"
 tensorflow-datasets = "*"
 pandas = "*"
+gunicorn = "*"
+cryptography = "*"
+flask-cors = "*"
 
 [dev-packages]
 
