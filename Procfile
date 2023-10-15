@@ -1,0 +1,1 @@
+web: cd advisor-copilot-web && npm run heroku-postbuild && cd ../advisor-copilot-sever && gunicorn app:src/app
