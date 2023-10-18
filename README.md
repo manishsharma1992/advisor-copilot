@@ -19,6 +19,7 @@
 
 ## Challenge Selected: Advisor Co-Pilot
 
+
 ## Summary of the Solution
 
 WorkFlow Diagram:
@@ -26,6 +27,8 @@ WorkFlow Diagram:
 
 Working Demo: Watch the video
 
-[![Working Demo](workflow-diagram.png)](https://github.com/manishsharma1992/advisor-copilot/assets/6358102/ad66a7db-ac98-4636-bdac-a461103a6b8e)
+[![Working Demo](workflow-diagram.png)](https://github.com/manishsharma1992/advisor-copilot/assets/6358102/d253c980-af1c-4b19-9aa4-da19f8352879)
+
+
 
 
